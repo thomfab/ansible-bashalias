@@ -1,0 +1,18 @@
+---
+# tasks file for ansible-bashalias
+
+- name: thomfab.bashalias | create alias file
+  sudo: yes
+  lineinfile:
+    dest: "/etc/bash_aliases"
+    create: yes
+    owner: root
+    group: root
+    mode: 0644
+    line: 'alias {{ item.alias }}="{{ item.command }}"'
+    regexp: "^alias {{ item.alias }}="
+  with_items: bashalias_aliases
+
+- name: thomfab.bashalias | add include for alias file
+  sudo: yes
+  lineinfile: dest=/etc/bash.bashrc line='source /etc/bash_aliases' state=present
