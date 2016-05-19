@@ -8,3 +8,5 @@ bashalias_aliases:
   - { alias: "sa", command: "sudo aptitude" }
   - { alias: "sau", command: "sudo aptitude update" }
   - { alias: "sad", command: "sudo aptitude dist-upgrade" }
+  - { alias: "du1", command: "du -h --max-depth=1" }
+ 
