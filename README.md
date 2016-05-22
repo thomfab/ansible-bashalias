@@ -7,21 +7,24 @@ Role Variables
 --------------
 
 
-One variable can be set : bashalias_aliases
+One variable can be set: `bashalias_aliases`
 
 It is a list of aliases to define. Each element is dictionary defining the alias.
 
-Example :
+Example:
+
+```
 bashalias_aliases:
   - { alias: "ll", command: "ls -hl" }
   - { alias: "la", command: "ls -hal" }
-
+```
 
 Example Playbook
 ----------------
 
-Example :
+Example:
 
+```
   ---
   - hosts: servers
     roles:
@@ -29,7 +32,7 @@ Example :
         bashalias_aliases:
           - { alias: "ll", command: "ls -hl" }
           - { alias: "la", command: "ls -hal" }
-
+```
 
 License
 -------
