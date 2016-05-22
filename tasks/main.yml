@@ -11,7 +11,7 @@
     mode: 0644
     line: 'alias {{ item.alias }}="{{ item.command }}"'
     regexp: "^alias {{ item.alias }}="
-  with_items: bashalias_aliases
+  with_items: "{{ bashalias_aliases }}"
 
 - name: thomfab/bashalias | add include for alias file
   sudo: yes
