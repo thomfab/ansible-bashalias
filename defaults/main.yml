@@ -5,8 +5,7 @@ bashalias_aliases:
   - { alias: "ll", command: "ls -hl" }
   - { alias: "la", command: "ls -hal" }
   - { alias: "hg", command: "history | grep" }
-  - { alias: "sa", command: "sudo aptitude" }
-  - { alias: "sau", command: "sudo aptitude update" }
-  - { alias: "sad", command: "sudo aptitude dist-upgrade" }
+  - { alias: "sa", command: "sudo apt" }
+  - { alias: "sau", command: "sudo apt update" }
+  - { alias: "sad", command: "sudo apt dist-upgrade" }
   - { alias: "du1", command: "du -h --max-depth=1" }
- 
