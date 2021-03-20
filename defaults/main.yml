@@ -10,5 +10,6 @@ bashalias_aliases:
   - { alias: "sad", command: "sudo apt dist-upgrade" }
   - { alias: "sas", command: "sudo apt search" }
   - { alias: "sai", command: "sudo apt install" }
+  - { alias: "saa", command: "sudo apt autoremove" }
   - { alias: "du1", command: "du -h --max-depth=1" }
   - { alias: "sdu1", command: "sudo du -h --max-depth=1" }
